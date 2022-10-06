@@ -5,6 +5,11 @@ const span = document.querySelector('.span');
 
 
 todo_add_button.addEventListener('click',function(){
+
+    if(todo_input.value==''){
+        alert('Input field cannot be empty')
+    }
+    else{
     span.classList.remove('span');
     span.classList.add('none');
 
@@ -40,4 +45,5 @@ todo_add_button.addEventListener('click',function(){
     }
 
     todo_input.value="";
+}
 });
