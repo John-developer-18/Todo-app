@@ -1,0 +1,114 @@
+:root{
+  --pink:#ff6a95;
+  --blue:#202142;
+  --dark-blue:#181931;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    border:none;
+}
+body{
+    background-color: var(--blue);
+    font-family: 'open sans';
+}
+header{
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    top:0;
+}
+header h1{
+    color:var(--pink);
+}
+ section{
+     position: relative;
+    top:83px;
+}
+.todo-add{
+    background-color: var(--dark-blue);
+    width:350px;
+    height:100px;
+    margin:0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:3px solid var(--pink) ;
+}
+.todo-list-container{
+    background-color: var(--dark-blue);
+    width:350px;
+    min-height:200px;
+    margin:20px auto;
+    border-top:3px solid var(--pink) ;
+    /* display: flex;
+    justify-content: center; */
+    padding: 0 15px;
+    padding-bottom: 15px;
+    
+}
+.todo-add input{
+    width: 250px;
+    height: 30px;
+    border:none;
+    background-color: var(--blue);
+    color: var(--pink);
+    padding-left: 10px;
+}
+.todo-add button{
+    height:30px;
+    width: 50px;
+    border: none;
+    background-color: var(--pink);
+    color: var(--blue);
+    cursor: pointer;
+}
+.todo-list-items{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    height: 40px;
+}
+.p{
+    width:230px;
+    background-color: var(--blue);
+    padding: 7px;
+    margin-right: 5px;
+    color: var(--pink);
+    font-size: 14px;
+    padding-top: 10px;
+}
+.button{
+    width:50px;
+    background-color: var(--pink);
+    margin-right:5px;
+    cursor:pointer;
+    color:var(--blue);
+}
+input:focus{
+    /* border:2px solid var(--pink); */
+    outline: none !important;
+}
+input::placeholder{
+    color: var(--pink);
+    opacity: 0.5;
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--pink);
+    opacity: 0.5;
+}
+.none{
+    display: none;
+}
+.line{
+    text-decoration: line-through;
+}
